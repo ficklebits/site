@@ -1,4 +1,6 @@
 $bgcolor: #e83855;
+$lightTextColor: lighten($bgcolor, 20%);
+$darkTextColor: darken($bgcolor, 20%);
 
 html {
   margin: 0;
@@ -45,10 +47,11 @@ a {
 .pipe {
   display: inline-block;
   padding: 0 20px;
-  color: darken($bgcolor, 10%);
+  color: $darkTextColor;
 }
 
 .subtitle {
+  color: $darkTextColor;
   margin: 48px;
   text-align: center;
   font-size: 1.4em;
@@ -81,6 +84,13 @@ a {
       display: block;
       float: left;
       margin: 20px 18px;
+
+      a {
+        path { fill: #fff }
+        &:hover {
+          path { fill: lighten($bgcolor, 10%); }
+        }
+      }
     }
   }
 }
