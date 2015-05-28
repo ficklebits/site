@@ -1,4 +1,4 @@
-A [jekyll](http://jekyllrb.com) site for ficklebits.com.
+A [jekyll](http://jekyllrb.com) site for [ficklebits.com](http://ficklebits.com).
 
 
 # Attribution
