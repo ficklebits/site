@@ -1,23 +1,20 @@
 ---
-layout: default
+layout: landing
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="hero">
+    <img class="logo"
+      src="/images/ficklebits-logo-white-683.png"
+      srcset="/images/ficklebits-logo-white-683.png,
+              /images/ficklebits-logo-white-1386.png 2x"
+      sizes="(min-width: 800px) 683w, 75%"
+      alt="Fickle Bits">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="subtitle">
+      iOS <span class="pipe">~</span> Rails <span class="pipe">~</span> Training
+    </div>
+  </div>
 
 </div>

@@ -1,9 +1,94 @@
+$bgcolor: #e83855;
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "myriad-pro", sans-serif;
+  background-color: $bgcolor;
+  color: #fff;
+  font-size: 18px;
+}
+
+a {
+  &,&:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  img {
+  }
+}
+
+.pipe {
+  display: inline-block;
+  padding: 0 20px;
+  color: darken($bgcolor, 10%);
+}
+
+.subtitle {
+  margin: 48px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    max-width: 80%;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+}
+
+
+.landing-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+
+  ul {
+    width: 188px;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    li {
+      padding: 0;
+      display: block;
+      float: left;
+      margin: 20px 18px;
+    }
+  }
+}
+
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -19,7 +104,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #fff;
     }
 }
 
@@ -92,8 +177,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid darken($bgcolor, 5%);
     padding: $spacing-unit 0;
+
+    a {
+       color: lighten($bgcolor, 15%);
+    }
 }
 
 .footer-heading {
@@ -105,11 +194,16 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    li {
+      display: block;
+      margin: 5px;
+      float: left;
+    }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: #fff;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
