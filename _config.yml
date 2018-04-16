@@ -11,4 +11,4 @@ github_username:  subdigital
 # Build settings
 markdown: kramdown
 
-exclude: [deploy.sh, README.md, config.codekit3]
+exclude: [deploy.sh, README.md, config.codekit3, Gemfile, Gemfile.lock]
