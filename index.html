@@ -2,9 +2,14 @@
 layout: landing
 ---
 
-<div class="home">
+<img src="/images/makeme-feed.png" class="feature-phone">
 
+<div class="home">
   <div class="hero">
+    <div class='landing-nav'>
+      <a href="#get-in-touch">Get in Touch</a>
+    </div>
+
     <a href="/">
       <img class="logo"
         src="/images/ficklebits-logo-white-693.png"
@@ -15,8 +20,94 @@ layout: landing
     </a>
 
     <div class="subtitle">
-      iOS <span class="pipe">~</span> Rails <span class="pipe">~</span> Training
+      Quality Apps. Delivered.
     </div>
+  </div>
+
+  <div class="main">
+
+    <section class="intro">
+      <h1>Expert iOS Development</h1>
+      <p class='device-icons'>
+        <img src="/images/Phone.svg" height="60">
+        <img src="/images/Tablet.svg" height="80">
+        <img src="/images/Computer.svg" height="100">
+        <img src="/images/TV.svg" height="120">
+      </p>
+      <p>From iPhone &amp; iPad to Apple tv and the Mac, Fickle Bits can help you deliver your next successful product.</p>
+    </section>
+    
+    <section class="skills">
+      <ul>
+        <li>
+          <h3>We sweat the details</h3>
+          <p><img src="/images/MagicWand.svg" height="50"></p>
+          <p>Great apps are all about the details. We have a great eye for the little details that make people love apps.</p>
+        </li>
+        <li>
+          <h3>Native &amp; Built to Last</h3>
+          <p><img src="/images/Hammer.svg" height="50"></p>
+          <p>You need to get your app to market fast, but you want to do it right. Building good products means being able to iterate quickly and build upon software that is <em>built well</em>.</p>
+        </li>
+        <li>
+          <h3>Need help?</h3>
+          <p><img src="/images/Fast.svg" height="50"></p>
+          <p>We can help your team deliver better software, faster. We can help with design, architecture, project automation, testing and overall training.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="intro">
+      <h1>Backend Server? Yeah, we can do that too.</h1>
+      <p>We've been shipping web apps, admin interfaces, and backend APIs for clients for years. We know what it takes to build a solid infrastructure for your backend system.</p>
+    </section>
+
+    <section class="skills">
+      <ul>
+        <li>
+          <h3>Rails, React, Vue</h3>
+          <p><img src="/images/Code.svg" height="50"></p>
+          <p>We've been shipping web apps of all kinds with <strong>Rails</strong> for years. It is an extremely productive framework and is our tool of choice.</p>
+          <p>Looking for a more modern front-end? We can also work with React, Vue and others for a rich front-end experience in the browser.</p>
+        </li>
+        <li>
+          <h3>Data Storage</h3>
+          <p><img src="/images/Database.svg" height="50"></p>
+          <p>The data needs of modern web apps is evolving rapidly. A single storage solution may not be sufficient. We are well-versed in the design and implementation of Postgres, Redis, and Elasticsearch.</p>
+        </li>
+        <li>
+          <h3>Hosting / Deployment</h3>
+          <p><img src="/images/Server.svg" height="50"></p>
+          <p><strong>Heroku</strong> is our prefered platform service as it provides the quickest way to deploy and manage a robust, scalable system.</p>
+          <p>We can also build custom infrastructure on Digital Ocean, Linode, or Amazon Web Services.</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="intro" id="get-in-touch">
+      <h3>Get in Touch</h3>
+      <form method="post" action="https://formspree.io/hello@ficklebits.com">
+
+        <input type="hidden" name="_next" value="//ficklebits.com/thanks">
+        <input type="hidden" name="_subject" value="Contact Request">
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <label for="name" class="required">Your name</label>
+        <input type="text" name="name" placeholder="Your name" required>
+
+        <label for="email" class="required">Email Address</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+
+        <label for="email">Phone Number</label>
+        <input type="text" name="phone" placeholder="555-111-2222">
+        
+        <label for="comments" class="required">How can we help?</label>
+        <textarea name="comments" cols="6" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+
   </div>
 
 </div>

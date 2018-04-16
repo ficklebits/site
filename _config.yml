@@ -3,7 +3,7 @@ title: Fickle Bits
 email: ben@ficklebits.com
 description: > # this means to ignore newlines until "baseurl:"
   Quality software development and consulting on iOS and Ruby on Rails.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://ficklebits.com" # the base hostname & protocol for your site
 twitter_username: subdigital
 github_username:  subdigital
@@ -11,4 +11,4 @@ github_username:  subdigital
 # Build settings
 markdown: kramdown
 
-exclude: [deploy.sh, README.md]
+exclude: [deploy.sh, README.md, config.codekit3]
