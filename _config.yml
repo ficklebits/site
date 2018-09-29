@@ -4,9 +4,10 @@ email: ben@ficklebits.com
 description: > # this means to ignore newlines until "baseurl:"
   Quality software development and consulting on iOS and Ruby on Rails.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://ficklebits.com" # the base hostname & protocol for your site
+url: "https://ficklebits.com" # the base hostname & protocol for your site
 twitter_username: subdigital
 github_username:  subdigital
+google_analytics: UA-57850928-5
 
 # Build settings
 markdown: kramdown
