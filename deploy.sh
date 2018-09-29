@@ -4,7 +4,7 @@ set -e
 
 echo "===> Generating site..."
 echo ""
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 echo ""
 echo ""
